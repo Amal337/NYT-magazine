@@ -3,6 +3,133 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*general styles*/
 img{
     width: 100px;
+}
+
+:root{
+    --btn-color: rgb(50,104,145);
+}
+html{
+    font-family: nyt-imperial, georgia, "times new roman", times, serif;
+}
+main{
+    width: 1200px;
+    margin: 6em auto 0 auto;
+}
+button{
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: .7rem;
+    line-height: .7em;
+    letter-spacing: .55px;
+    color: #fff;
+    font-weight: 800;
+}
+figcaption{
+    color: #666;
+    line-height: 1.25rem;
+    font-size: .9375rem;
+    max-width: 900px;
+}
+figcaption span.small-grey{
+    color: #888;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+}
+.small-grey{
+    font-size: .8rem;
+    color: #333;
+}
+/*top navigation*/
+.border{
+    border: 1px solid #ddd;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #fff;
+}
+.top-nav{
+    display: flex;
+    width: 80%;
+    margin:0 auto;
+    height: 3.5em;
+    align-items: center;
+}
+.top-nav .fas{
+    margin-right: .6em;
+}
+.top-nav button{
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    border-radius: 3px;
+    margin-left: .5em;
+    padding: .7em;
+}
+.top-nav__img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+/*main section styles*/
+
+.main__opening-section__title{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2.3rem;
+    margin-bottom: 1em;
+}
+
+.main__opening-section__figure__img{
+    display: block;
+    width: 100%;
+}
+.main__main-section{
+    width: 50%;
+    margin: 20px auto;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+.main__main-section p{
+    margin-bottom: .8em;
+}
+.main__main-section>div{
+    padding: 2.5em 0;
+    border-bottom: 1px solid black;
+}
+div.main__story-part1{
+    padding-top: .8em;
+}
+.main__info{
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 100%;
+}
+.main__info__author{
+    line-height: 1rem;
+    font-size: .9375rem;
+    border-bottom: 1px solid rgb(51, 51, 51, .3);
+    width: max-content;
+    margin-bottom: 20px;
+}
+.main__info__flex{
+    display: flex;
+    justify-content: space-between;
+}
+.social img{
+    width: 20px;
+    border-radius: 50%;
+}
+.main__story-part3__img{
+    position: relative;
+    z-index: -2;
+}
+.main__story-part3__img img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.small{
+    font-size: .5rem;
 }
